@@ -1,0 +1,8 @@
+ private static SkladEntities _Context;
+
+public static SkladEntities GetContext()
+        {
+            if (_Context == null)
+                _Context = new SkladEntities();
+            return _Context;
+        }
